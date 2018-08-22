@@ -1,6 +1,11 @@
-# Memory
+# Othello
 
 ## Development Instructions
+
+Attributions:
+ * https://github.com/mborgbrant/react-othello-game
+ * https://elixirforum.com/t/transform-a-list-into-an-map-with-indexes-using-enum-module/1523/2
+ * Draw App by profssor Nat Tuck
 
 Prerequisites:
 
@@ -23,12 +28,12 @@ Instructions to deploy to an Ubuntu 16.04 VPS:
 As root:
 
  * Install Erlang and Elixir packages.
- * Create a new Linux user account, "memory".
- * Add a nginx config for the new site. See "memory.nginx" for an example.
+ * Create a new Linux user account, "othello".
+ * Add a nginx config for the new site. See "othello.nginx" for an example.
 
 As the new user:
 
- * Check out this git repository to ~/src/memory
+ * Check out this git repository to ~/src/othello
  * Run the deploy script.
    * You may need to answer "Y" and press return.
  * Run the start script to start your server.

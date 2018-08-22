@@ -6,11 +6,11 @@
 use Mix.Config
 
 # Configures the endpoint
-config :memory, MemoryWeb.Endpoint,
+config :othello, OthelloWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "9C/J32cAtdpBZcOPDkPgRBhArnDpMGPCAbN0u5XBuKJlS8J2i/aqXtnI6wj68YC6",
-  render_errors: [view: MemoryWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Memory.PubSub,
+  render_errors: [view: OthelloWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Othello.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

@@ -2,7 +2,7 @@
 
 export PORT=5100
 
-cd ~/www/memory
-./bin/memory stop || true
-./bin/memory start
+cd ~/www/othello
+./bin/othello stop || true
+./bin/othello start
 

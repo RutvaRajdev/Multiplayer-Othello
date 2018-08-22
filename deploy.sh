@@ -2,7 +2,7 @@
 
 export PORT=5100
 export MIX_ENV=prod
-export GIT_PATH=/home/memory/src/memory 
+export GIT_PATH=/home/othello/src/othello 
 
 PWD=`pwd`
 if [ $PWD != $GIT_PATH ]; then
@@ -11,8 +11,8 @@ if [ $PWD != $GIT_PATH ]; then
 	exit 1
 fi
 
-if [ $USER != "memory" ]; then
-	echo "Error: must run as user 'memory'"
+if [ $USER != "othello" ]; then
+	echo "Error: must run as user 'othello'"
 	echo "  Current user is $USER"
 	exit 2
 fi
@@ -27,17 +27,17 @@ mkdir -p ~/www
 mkdir -p ~/old
 
 NOW=`date +%s`
-if [ -d ~/www/memory ]; then
-	echo mv ~/www/memory ~/old/$NOW
-	mv ~/www/memory ~/old/$NOW
+if [ -d ~/www/othello ]; then
+	echo mv ~/www/othello ~/old/$NOW
+	mv ~/www/othello ~/old/$NOW
 fi
 
-mkdir -p ~/www/memory
-REL_TAR=~/src/memory/_build/prod/rel/memory/releases/0.0.1/memory.tar.gz
-(cd ~/www/memory && tar xzvf $REL_TAR)
+mkdir -p ~/www/othello
+REL_TAR=~/src/othello/_build/prod/rel/othello/releases/0.0.1/othello.tar.gz
+(cd ~/www/othello && tar xzvf $REL_TAR)
 
 crontab - <<CRONTAB
-@reboot bash /home/memory/src/memory/start.sh
+@reboot bash /home/othello/src/othello/start.sh
 CRONTAB
 
 #. start.sh

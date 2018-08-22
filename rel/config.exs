@@ -30,13 +30,13 @@ environment :dev do
   # dev mode.
   set dev_mode: true
   set include_erts: false
-  set cookie: :"7!ega!qL{42Cm:[JL4rwMfC{0TDHFo~?mwXE2D:>N~H5ee[PeOGRC`UlkN[|,__F"
+  set cookie: :"]@)^*Gsx719)B6{EYBLX3j,|PT(]>$)Qxw[T!*60YyVXs9DpjXjaUc9F?LkgO%;z"
 end
 
 environment :prod do
   set include_erts: true
   set include_src: false
-  set cookie: :"*qUG_NPfTQ6zm8NlVea2eM{N%5_UlCtE7F,u[EuH,cxB6HWFcI?nRMwOypM2Kr/O"
+  set cookie: :":8DwX,*pdufMS/kFnJg<NTUJ4$28ID:>{,*1@=oA&~(U)Ix&a|gfM)_Q);@cF}^0"
 end
 
 # You may define one or more releases in this file.
@@ -44,8 +44,8 @@ end
 # when running `mix release`, the first release in the file
 # will be used by default
 
-release :memory do
-  set version: current_version(:memory)
+release :othello do
+  set version: current_version(:othello)
   set applications: [
     :runtime_tools
   ]

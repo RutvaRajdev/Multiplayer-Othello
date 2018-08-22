@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :memory, MemoryWeb.Endpoint,
+config :othello, OthelloWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -31,13 +31,13 @@ config :memory, MemoryWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :memory, MemoryWeb.Endpoint,
+config :othello, OthelloWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
-      ~r{lib/memory_web/views/.*(ex)$},
-      ~r{lib/memory_web/templates/.*(eex)$}
+      ~r{lib/othello_web/views/.*(ex)$},
+      ~r{lib/othello_web/templates/.*(eex)$}
     ]
   ]
 
