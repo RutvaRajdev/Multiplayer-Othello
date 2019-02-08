@@ -1,5 +1,7 @@
 # Othello
 
+See the application live on: https://othello.rutvarajdev.com/
+
 ## Development Instructions
 
 Attributions:
